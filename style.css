@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* شاشة الدخول */
+.welcome {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+}
+
+.welcome button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #00f2ff;
+    transition: 0.3s;
+}
+
+.welcome button:hover {
+    transform: scale(1.1);
+    background: #00bcd4;
+}
+
+/* المحتوى */
+.container {
+    padding: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.subtitle {
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.buttons button {
+    display: block;
+    width: 260px;
+    margin: 15px auto;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background: rgba(255,255,255,0.3);
+    transform: translateY(-3px);
+}
+
+/* انيميشن */
+.fade {
+    margin-top: 30px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade.show {
+    opacity: 1;
+}
+
+img, video, audio {
+    margin-top: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+}

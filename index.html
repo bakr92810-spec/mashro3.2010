@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>مشروع بجرب فيه يسطا</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="مشروع هزار تجربة للمتعة">
+    <meta name="keywords" content="مشروع, هزار, تجربة, موقع">
+    <meta name="author" content="بكر">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <!-- شاشة البداية -->
+    <div id="welcomeScreen" class="welcome">
+        <h1>جاهز يا معلم؟ 😏</h1>
+        <button onclick="enterSite()">ادخل يسطا</button>
+    </div>
+
+    <!-- الموقع الأساسي -->
+    <div class="container hidden" id="mainContent">
+        <h1>ازيق يسطا عامل ايه 🦆</h1>
+        <p class="subtitle">مشروع تجربه مش اكتر</p>
+
+        <div class="buttons">
+            <button onclick="showInfo()">معلومات مصمم الموقع</button>
+            <button onclick="showImage()">دوس متخافش</button>
+            <button onclick="showVideo()">يعم دوس</button>
+            <button onclick="showAudio()">دي بقى مفاجأة</button>
+        </div>
+
+        <div id="content" class="fade"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
